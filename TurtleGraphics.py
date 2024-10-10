@@ -1,10 +1,9 @@
 #TurtleGraphics.py
-#Name:
-#Date:
-#Assignment:
+#Name: Alex Bowes
+#Date: 10/10/24
+#Assignment: Lab 4
 
 import turtle #needed generally but not in CodeHS
-hideturtle() #hides the default turtle in CodeHS
 
 def drawSquare(myTurtle, size):
     for i in range(4):
@@ -13,15 +12,97 @@ def drawSquare(myTurtle, size):
 
 
 def main():
-    myTurtle = turtle.Turtle()
-    # drawPolygon(myTurtle, 5) #draws a pentagon
+    bob = turtle.Turtle()
+# drawPolygon(myTurtle, 5) #draws a pentagon
+    bob.forward(50)
+    bob.left(72)
+    bob.forward(50)
+    bob.left(72)
+    bob.forward(50)
+    bob.left(72)
+    bob.forward(50)
+    bob.left(72)
+    bob.forward(50)
+    bob.left(72)
+    bob.up()
+    bob.goto(-50, -50)
+    bob.down()
     # drawPolygon(myTurtle, 8) #draws an octogon
-
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
+    bob.forward(20)
+    bob.left(45)
     # fillCorner(myTurtle, 2) #draws a square with top right corner filled in.
+    bob.up()
+    bob.goto(0, -50)
+    bob.down()
+    drawSquare(bob, 100)
+    bob.forward(50)
+    bob.fillcolor('black')
+    bob.begin_fill()
+    drawSquare(bob, 50)
+    bob.end_fill()
     # fillCorner(myTurtle, 3) #draws a square bottom left corner filled in.
-
+    bob.up()
+    bob.goto(-257.5, -195)
+    bob.down()
+    bob.fillcolor('purple')
+    bob.begin_fill()
+    drawSquare(bob,100)
+    bob.end_fill()
     # squaresInSquares(myTurtle, 5) #draws 5 concentric squares
+    bob.up()
+    bob.goto(-257.5, 295)
+    bob.down()
+    drawSquare(bob, 200)
+    bob.up()
+    bob.goto(-250, 287.5)
+    bob.down()
+    drawSquare(bob, 185)
+    bob.up()
+    bob.goto(-242.5, 280)
+    bob.down()
+    drawSquare(bob, 170)
+    bob.up()
+    bob.goto(-235, 272.5)
+    bob.down()
+    drawSquare(bob, 155)
+    bob.up()
+    bob.goto(-227.5, 265)
+    bob.down()
+    drawSquare(bob, 140)
+    bob.up()
+    bob.goto(-220, 257.5)
+    bob.down()
+    drawSquare(bob, 125)
     # squaresInSquares(myTurtle, 3) #draws 3 concentric squares
-
-
+    bob.up()
+    bob.goto(50, 250)
+    bob.down()
+    drawSquare(bob, 100)
+    bob.up()
+    bob.goto(60, 240)
+    bob.down()
+    drawSquare(bob, 80)
+    bob.up()
+    bob.goto(70, 230)
+    bob.down()
+    drawSquare(bob, 60)
+    bob.up()
+    bob.goto(80, 220)
+    bob.down()
+    drawSquare(bob, 40)
+    
 main()
